@@ -1,0 +1,13 @@
+{
+  "format": 1,
+  "version": 1,
+  "minApp": "0.1.0",
+  "published": "2026-11-14T19:49:14Z",
+  "files": [
+    {
+      "path": "packs/xmas-2026.json",
+      "sha256": "fb8282ee85e709705f637c1e6d3fd78c619a32564d97709985bc34461680d3bb",
+      "size": 28401
+    }
+  ]
+}

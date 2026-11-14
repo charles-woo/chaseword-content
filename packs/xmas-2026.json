@@ -1,0 +1,316 @@
+{
+  "format": 1,
+  "id": "xmas-2026",
+  "themes": [
+    {
+      "id": "xmas",
+      "name": { "zh": "聖誕小鎮", "en": "Christmas Town" },
+      "icon": "🎄",
+      "music": "ice",
+      "sky": "#bfe0ff", "fogColor": "#e3f1ff", "sea": "#5a8fd8", "seaDeep": "#3c6fc0", "cloud": "#ffffff",
+      "ground": {
+        "base": "#f6f9ff", "alt": "#dcefff", "path": "#b5524a", "pathEdge": "#f2d7b0", "line": "#ffffff",
+        "studHi": "rgba(255,255,255,0.8)", "studLo": "rgba(70,90,140,0.15)",
+        "pattern": "snow", "pathStyle": "cobbles",
+        "patches": ["#dcefff", "#e4f6e8", "#ffe8ee"],
+        "sprinkles": ["#ff4f6d", "#3ddc97", "#ffd23f", "#9fd0ff"]
+      },
+      "cliff": { "top": "#ffffff", "body": "#c98a5b", "band": "#e8364a", "under": "#8a5a3c" },
+      "bridge": ["#e8364a", "#ffffff", "#2fb35e", "#ffffff"],
+      "gate": "#ffd23f", "hazard": "#e8364a", "hazardAlt": "#ffffff",
+      "street": ["candycane", "lamppost", "gift_small", "bauble", "gingerbread", "snowman"],
+      "movers": [["reindeer"], ["sleigh", "reindeer"], ["toy_train", "sleigh"], ["toy_train"]],
+      "types": {
+        "bauble": { "size": 0.3, "height": 0.55, "points": 2, "parts": [
+          { "shape": "sphere", "size": [0.24], "color": "#e8364a", "pos": [0, 0.25, 0] },
+          { "shape": "sphere", "size": [0.07], "color": "#ffffff", "pos": [0.09, 0.34, 0.15] },
+          { "shape": "cylinder", "size": [0.06, 0.07, 0.1], "color": "#ffd23f", "pos": [0, 0.5, 0], "seg": 8 }
+        ] },
+        "gift_small": { "size": 0.35, "height": 0.6, "points": 2, "parts": [
+          { "shape": "box", "size": [0.46, 0.4, 0.46], "color": "#2fb35e", "pos": [0, 0.2, 0] },
+          { "shape": "box", "size": [0.48, 0.42, 0.1], "color": "#e8364a", "pos": [0, 0.2, 0] },
+          { "shape": "box", "size": [0.1, 0.42, 0.48], "color": "#e8364a", "pos": [0, 0.2, 0] },
+          { "shape": "sphere", "size": [0.09], "color": "#e8364a", "pos": [0.08, 0.45, 0], "scale": [1.5, 0.8, 0.8] },
+          { "shape": "sphere", "size": [0.09], "color": "#e8364a", "pos": [-0.08, 0.45, 0], "scale": [1.5, 0.8, 0.8] }
+        ] },
+        "bell": { "size": 0.4, "height": 0.8, "points": 3, "parts": [
+          { "shape": "cone", "size": [0.3, 0.48], "color": "#ffc93c", "pos": [0, 0.34, 0], "seg": 12 },
+          { "shape": "cylinder", "size": [0.31, 0.31, 0.08], "color": "#ffb000", "pos": [0, 0.12, 0], "seg": 12 },
+          { "shape": "sphere", "size": [0.08], "color": "#ffb000", "pos": [0, 0.07, 0] },
+          { "shape": "sphere", "size": [0.09], "color": "#e8364a", "pos": [0.1, 0.62, 0], "scale": [1.5, 0.8, 0.8] },
+          { "shape": "sphere", "size": [0.09], "color": "#e8364a", "pos": [-0.1, 0.62, 0], "scale": [1.5, 0.8, 0.8] },
+          { "shape": "sphere", "size": [0.06], "color": "#2fb35e", "pos": [0, 0.64, 0.04] }
+        ] },
+        "candycane": { "size": 0.5, "height": 2.5, "points": 6, "parts": [
+          { "shape": "box", "size": [0.5, 0.08, 0.5], "color": "#ffffff", "pos": [0, 0.04, 0] },
+          { "shape": "cylinder", "size": [0.13, 0.13, 0.22], "color": "#e8364a", "pos": [0, 0.11, 0], "seg": 8 },
+          { "shape": "cylinder", "size": [0.13, 0.13, 0.22], "color": "#ffffff", "pos": [0, 0.33, 0], "seg": 8 },
+          { "shape": "cylinder", "size": [0.13, 0.13, 0.22], "color": "#e8364a", "pos": [0, 0.55, 0], "seg": 8 },
+          { "shape": "cylinder", "size": [0.13, 0.13, 0.22], "color": "#ffffff", "pos": [0, 0.77, 0], "seg": 8 },
+          { "shape": "cylinder", "size": [0.13, 0.13, 0.22], "color": "#e8364a", "pos": [0, 0.99, 0], "seg": 8 },
+          { "shape": "cylinder", "size": [0.13, 0.13, 0.22], "color": "#ffffff", "pos": [0, 1.21, 0], "seg": 8 },
+          { "shape": "cylinder", "size": [0.13, 0.13, 0.22], "color": "#e8364a", "pos": [0, 1.43, 0], "seg": 8 },
+          { "shape": "cylinder", "size": [0.13, 0.13, 0.22], "color": "#ffffff", "pos": [0, 1.65, 0], "seg": 8 },
+          { "shape": "cylinder", "size": [0.13, 0.13, 0.22], "color": "#e8364a", "pos": [0, 1.87, 0], "seg": 8 },
+          { "shape": "torus", "size": [0.32, 0.13], "color": "#e8364a", "pos": [0.32, 1.98, 0], "arc": 180, "seg": 12 },
+          { "shape": "sphere", "size": [0.13], "color": "#ffffff", "pos": [0.64, 1.98, 0] }
+        ] },
+        "gingerbread": { "size": 0.6, "height": 1.4, "points": 6, "parts": [
+          { "shape": "sphere", "size": [0.36], "color": "#c27a45", "pos": [0, 0.62, 0], "scale": [1, 1.15, 0.5] },
+          { "shape": "sphere", "size": [0.26], "color": "#c27a45", "pos": [0, 1.14, 0], "scale": [1, 1, 0.6] },
+          { "shape": "sphere", "size": [0.15], "color": "#c27a45", "pos": [0.42, 0.8, 0], "scale": [1.6, 0.8, 0.6] },
+          { "shape": "sphere", "size": [0.15], "color": "#c27a45", "pos": [-0.42, 0.8, 0], "scale": [1.6, 0.8, 0.6] },
+          { "shape": "sphere", "size": [0.17], "color": "#c27a45", "pos": [0.17, 0.2, 0], "scale": [0.9, 1.4, 0.6] },
+          { "shape": "sphere", "size": [0.17], "color": "#c27a45", "pos": [-0.17, 0.2, 0], "scale": [0.9, 1.4, 0.6] },
+          { "shape": "sphere", "size": [0.05], "color": "#2b2340", "pos": [0.09, 1.2, 0.15] },
+          { "shape": "sphere", "size": [0.05], "color": "#2b2340", "pos": [-0.09, 1.2, 0.15] },
+          { "shape": "torus", "size": [0.08, 0.02], "color": "#ffffff", "pos": [0, 1.08, 0.15], "rot": [0, 0, 180], "arc": 180, "seg": 10 },
+          { "shape": "sphere", "size": [0.05], "color": "#e8364a", "pos": [0, 0.78, 0.18] },
+          { "shape": "sphere", "size": [0.05], "color": "#2fb35e", "pos": [0, 0.6, 0.18] },
+          { "shape": "sphere", "size": [0.05], "color": "#ffffff", "pos": [0, 0.42, 0.18] }
+        ] },
+        "lamppost": { "size": 0.5, "height": 3.2, "points": 6, "parts": [
+          { "shape": "box", "size": [0.5, 0.1, 0.5], "color": "#2d5a3d", "pos": [0, 0.05, 0] },
+          { "shape": "cylinder", "size": [0.07, 0.09, 2.6], "color": "#2d5a3d", "pos": [0, 1.35, 0], "seg": 8 },
+          { "shape": "box", "size": [0.42, 0.46, 0.42], "color": "#fff1a6", "pos": [0, 2.85, 0] },
+          { "shape": "cone", "size": [0.36, 0.32], "color": "#2d5a3d", "pos": [0, 3.24, 0], "rot": [0, 45, 0], "seg": 4 },
+          { "shape": "torus", "size": [0.22, 0.07], "color": "#2fb35e", "pos": [0, 1.9, 0.1], "seg": 14 },
+          { "shape": "sphere", "size": [0.07], "color": "#e8364a", "pos": [0, 1.7, 0.16], "scale": [1.6, 0.9, 0.9] }
+        ] },
+        "snowman": { "size": 0.85, "height": 2.6, "points": 6, "parts": [
+          { "shape": "sphere", "size": [0.62], "color": "#ffffff", "pos": [0, 0.55, 0] },
+          { "shape": "sphere", "size": [0.46], "color": "#ffffff", "pos": [0, 1.35, 0] },
+          { "shape": "sphere", "size": [0.34], "color": "#ffffff", "pos": [0, 1.95, 0] },
+          { "shape": "torus", "size": [0.36, 0.1], "color": "#2fb35e", "pos": [0, 1.66, 0], "rot": [90, 0, 0], "seg": 14 },
+          { "shape": "box", "size": [0.16, 0.5, 0.06], "color": "#2fb35e", "pos": [0.22, 1.45, 0.38] },
+          { "shape": "cone", "size": [0.07, 0.38], "color": "#ff8a3d", "pos": [0, 1.95, 0.48], "rot": [90, 0, 0], "seg": 6 },
+          { "shape": "sphere", "size": [0.05], "color": "#2b2340", "pos": [0.13, 2.08, 0.29] },
+          { "shape": "sphere", "size": [0.05], "color": "#2b2340", "pos": [-0.13, 2.08, 0.29] },
+          { "shape": "cone", "size": [0.26, 0.5], "color": "#e8364a", "pos": [0, 2.42, 0], "rot": [-12, 0, 0], "seg": 10 },
+          { "shape": "cylinder", "size": [0.29, 0.29, 0.1], "color": "#ffffff", "pos": [0, 2.2, 0], "seg": 12 },
+          { "shape": "sphere", "size": [0.08], "color": "#ffffff", "pos": [0, 2.66, -0.06] }
+        ] },
+        "xtree_small": { "size": 1.1, "height": 3.8, "points": 14, "parts": [
+          { "shape": "cylinder", "size": [0.18, 0.22, 0.7], "color": "#8a5a3c", "pos": [0, 0.35, 0], "seg": 7 },
+          { "shape": "cone", "size": [1.05, 1.5], "color": "#1f8a5b", "pos": [0, 1.35, 0], "seg": 9 },
+          { "shape": "cone", "size": [0.82, 1.3], "color": "#25a06a", "pos": [0, 2.25, 0], "seg": 9 },
+          { "shape": "cone", "size": [0.56, 1.1], "color": "#2fb878", "pos": [0, 3.05, 0], "seg": 9 },
+          { "shape": "sphere", "size": [0.12], "color": "#e8364a", "pos": [0, 0.95, 0], "ring": { "n": 6, "r": 0.86 } },
+          { "shape": "sphere", "size": [0.11], "color": "#ffd23f", "pos": [0, 1.85, 0], "ring": { "n": 5, "r": 0.62, "start": 30 } },
+          { "shape": "sphere", "size": [0.1], "color": "#4fb3ff", "pos": [0, 2.65, 0], "ring": { "n": 4, "r": 0.4, "start": 10 } },
+          { "shape": "ico", "size": [0.24], "color": "#ffd23f", "pos": [0, 3.68, 0], "scale": [1, 1.2, 0.6] }
+        ] },
+        "reindeer": { "size": 1.25, "height": 2.3, "points": 18, "parts": [
+          { "shape": "sphere", "size": [0.55], "color": "#9a6233", "pos": [0, 1.0, 0], "scale": [0.8, 0.8, 1.35] },
+          { "shape": "sphere", "size": [0.3], "color": "#f2dcc0", "pos": [0, 0.9, 0.25], "scale": [0.9, 0.8, 1.2] },
+          { "shape": "cylinder", "size": [0.08, 0.1, 0.75], "color": "#7a4a2a", "pos": [0.25, 0.38, 0.45], "seg": 7 },
+          { "shape": "cylinder", "size": [0.08, 0.1, 0.75], "color": "#7a4a2a", "pos": [-0.25, 0.38, 0.45], "seg": 7 },
+          { "shape": "cylinder", "size": [0.08, 0.1, 0.75], "color": "#7a4a2a", "pos": [0.25, 0.38, -0.45], "seg": 7 },
+          { "shape": "cylinder", "size": [0.08, 0.1, 0.75], "color": "#7a4a2a", "pos": [-0.25, 0.38, -0.45], "seg": 7 },
+          { "shape": "cylinder", "size": [0.14, 0.18, 0.5], "color": "#9a6233", "pos": [0, 1.4, 0.62], "rot": [30, 0, 0], "seg": 8 },
+          { "shape": "sphere", "size": [0.3], "color": "#9a6233", "pos": [0, 1.7, 0.78], "scale": [0.9, 0.9, 1.2] },
+          { "shape": "sphere", "size": [0.11], "color": "#ff2e3d", "pos": [0, 1.66, 1.1] },
+          { "shape": "sphere", "size": [0.05], "color": "#2b2340", "pos": [0.14, 1.82, 0.98] },
+          { "shape": "sphere", "size": [0.05], "color": "#2b2340", "pos": [-0.14, 1.82, 0.98] },
+          { "shape": "cylinder", "size": [0.04, 0.05, 0.5], "color": "#d9b07a", "pos": [0.16, 2.08, 0.7], "rot": [0, 0, -25], "seg": 6 },
+          { "shape": "cylinder", "size": [0.04, 0.05, 0.5], "color": "#d9b07a", "pos": [-0.16, 2.08, 0.7], "rot": [0, 0, 25], "seg": 6 },
+          { "shape": "cylinder", "size": [0.03, 0.04, 0.25], "color": "#d9b07a", "pos": [0.32, 2.2, 0.78], "rot": [30, 0, -60], "seg": 6 },
+          { "shape": "cylinder", "size": [0.03, 0.04, 0.25], "color": "#d9b07a", "pos": [-0.32, 2.2, 0.78], "rot": [30, 0, 60], "seg": 6 },
+          { "shape": "box", "size": [0.5, 0.1, 0.1], "color": "#e8364a", "pos": [0, 1.32, 0.66], "rot": [30, 0, 0] },
+          { "shape": "sphere", "size": [0.09], "color": "#ffd23f", "pos": [0, 1.24, 0.74] },
+          { "shape": "sphere", "size": [0.12], "color": "#ffffff", "pos": [0, 1.15, -0.72] }
+        ] },
+        "sleigh": { "size": 1.75, "height": 2.3, "points": 30, "kind": "vehicle", "parts": [
+          { "shape": "box", "size": [1.4, 0.75, 2.4], "color": "#e8364a", "pos": [0, 0.85, 0] },
+          { "shape": "box", "size": [1.44, 0.14, 2.44], "color": "#ffd23f", "pos": [0, 1.26, 0] },
+          { "shape": "box", "size": [1.4, 0.9, 0.3], "color": "#e8364a", "pos": [0, 1.4, -1.05] },
+          { "shape": "box", "size": [1.2, 0.2, 0.9], "color": "#2fb35e", "pos": [0, 1.3, 0.2] },
+          { "shape": "box", "size": [0.1, 0.1, 2.8], "color": "#ffd23f", "pos": [0.55, 0.1, 0] },
+          { "shape": "box", "size": [0.1, 0.1, 2.8], "color": "#ffd23f", "pos": [-0.55, 0.1, 0] },
+          { "shape": "torus", "size": [0.3, 0.05], "color": "#ffd23f", "pos": [0.55, 0.4, 1.4], "rot": [0, 90, 0], "arc": 180, "seg": 10 },
+          { "shape": "torus", "size": [0.3, 0.05], "color": "#ffd23f", "pos": [-0.55, 0.4, 1.4], "rot": [0, 90, 0], "arc": 180, "seg": 10 },
+          { "shape": "box", "size": [0.08, 0.4, 0.08], "color": "#ffd23f", "pos": [0.55, 0.3, 0.7] },
+          { "shape": "box", "size": [0.08, 0.4, 0.08], "color": "#ffd23f", "pos": [-0.55, 0.3, 0.7] },
+          { "shape": "box", "size": [0.08, 0.4, 0.08], "color": "#ffd23f", "pos": [0.55, 0.3, -0.7] },
+          { "shape": "box", "size": [0.08, 0.4, 0.08], "color": "#ffd23f", "pos": [-0.55, 0.3, -0.7] },
+          { "shape": "sphere", "size": [0.55], "color": "#c9a46b", "pos": [0, 1.75, -0.45], "scale": [1, 1.1, 1] },
+          { "shape": "box", "size": [0.35, 0.3, 0.35], "color": "#4fb3ff", "pos": [0.3, 2.15, -0.2] },
+          { "shape": "box", "size": [0.3, 0.3, 0.3], "color": "#ff7fbf", "pos": [-0.25, 2.2, -0.5] }
+        ] },
+        "present_stack": { "size": 2.3, "height": 3.8, "points": 45, "parts": [
+          { "shape": "box", "size": [2.6, 1.4, 2.6], "color": "#e8364a", "pos": [0, 0.7, 0] },
+          { "shape": "box", "size": [2.64, 1.44, 0.4], "color": "#ffd23f", "pos": [0, 0.7, 0] },
+          { "shape": "box", "size": [0.4, 1.44, 2.64], "color": "#ffd23f", "pos": [0, 0.7, 0] },
+          { "shape": "box", "size": [1.8, 1.1, 1.8], "color": "#2fb35e", "pos": [0.1, 1.95, 0.05], "rot": [0, 20, 0] },
+          { "shape": "box", "size": [1.84, 1.14, 0.3], "color": "#ffffff", "pos": [0.1, 1.95, 0.05], "rot": [0, 20, 0] },
+          { "shape": "box", "size": [0.3, 1.14, 1.84], "color": "#ffffff", "pos": [0.1, 1.95, 0.05], "rot": [0, 20, 0] },
+          { "shape": "box", "size": [1.0, 0.8, 1.0], "color": "#4fb3ff", "pos": [-0.05, 2.9, 0], "rot": [0, -15, 0] },
+          { "shape": "box", "size": [1.04, 0.84, 0.22], "color": "#ff7fbf", "pos": [-0.05, 2.9, 0], "rot": [0, -15, 0] },
+          { "shape": "sphere", "size": [0.22], "color": "#ff7fbf", "pos": [0.15, 3.4, 0], "scale": [1.5, 0.7, 0.7] },
+          { "shape": "sphere", "size": [0.22], "color": "#ff7fbf", "pos": [-0.25, 3.4, 0], "scale": [1.5, 0.7, 0.7] }
+        ] },
+        "xtree_big": { "size": 2.4, "height": 7.6, "points": 60, "parts": [
+          { "shape": "cylinder", "size": [0.4, 0.5, 1.2], "color": "#8a5a3c", "pos": [0, 0.6, 0], "seg": 8 },
+          { "shape": "cone", "size": [2.3, 2.6], "color": "#1f8a5b", "pos": [0, 2.4, 0], "seg": 12 },
+          { "shape": "cone", "size": [1.85, 2.3], "color": "#25a06a", "pos": [0, 3.9, 0], "seg": 12 },
+          { "shape": "cone", "size": [1.35, 2.0], "color": "#2fb878", "pos": [0, 5.2, 0], "seg": 12 },
+          { "shape": "cone", "size": [0.8, 1.5], "color": "#36c483", "pos": [0, 6.3, 0], "seg": 10 },
+          { "shape": "sphere", "size": [0.22], "color": "#e8364a", "pos": [0, 1.4, 0], "ring": { "n": 10, "r": 1.95 } },
+          { "shape": "sphere", "size": [0.2], "color": "#ffd23f", "pos": [0, 3.0, 0], "ring": { "n": 8, "r": 1.55, "start": 20 } },
+          { "shape": "sphere", "size": [0.18], "color": "#4fb3ff", "pos": [0, 4.4, 0], "ring": { "n": 7, "r": 1.1, "start": 10 } },
+          { "shape": "sphere", "size": [0.16], "color": "#ff7fbf", "pos": [0, 5.6, 0], "ring": { "n": 5, "r": 0.66, "start": 40 } },
+          { "shape": "ico", "size": [0.5], "color": "#ffd23f", "pos": [0, 7.3, 0], "scale": [1, 1.2, 0.6] },
+          { "shape": "box", "size": [0.7, 0.55, 0.7], "color": "#4fb3ff", "pos": [1.6, 0.28, 0.9], "rot": [0, 25, 0] },
+          { "shape": "box", "size": [0.6, 0.5, 0.6], "color": "#ff7fbf", "pos": [-1.5, 0.25, 1.1], "rot": [0, -20, 0] }
+        ] },
+        "toy_train": { "size": 2.7, "height": 3.2, "points": 75, "kind": "vehicle", "parts": [
+          { "shape": "box", "size": [1.7, 0.5, 5.2], "color": "#2b2340", "pos": [0, 0.55, 0] },
+          { "shape": "cylinder", "size": [0.75, 0.75, 2.4], "color": "#e8364a", "pos": [0, 1.55, 1.2], "rot": [90, 0, 0], "seg": 14 },
+          { "shape": "cylinder", "size": [0.8, 0.8, 0.2], "color": "#ffd23f", "pos": [0, 1.55, 2.45], "rot": [90, 0, 0], "seg": 14 },
+          { "shape": "cylinder", "size": [0.25, 0.18, 0.9], "color": "#2b2340", "pos": [0, 2.6, 1.8], "seg": 10 },
+          { "shape": "box", "size": [1.7, 1.9, 1.8], "color": "#2fb35e", "pos": [0, 1.75, -1.2] },
+          { "shape": "box", "size": [1.9, 0.22, 2.0], "color": "#e8364a", "pos": [0, 2.8, -1.2] },
+          { "shape": "box", "size": [1.74, 0.6, 0.8], "color": "#bfe9ff", "pos": [0, 2.1, -1.2] },
+          { "shape": "cylinder", "size": [0.42, 0.42, 0.24], "color": "#ffd23f", "pos": [0.86, 0.42, 1.6], "rot": [0, 0, 90], "seg": 12 },
+          { "shape": "cylinder", "size": [0.42, 0.42, 0.24], "color": "#ffd23f", "pos": [-0.86, 0.42, 1.6], "rot": [0, 0, 90], "seg": 12 },
+          { "shape": "cylinder", "size": [0.42, 0.42, 0.24], "color": "#ffd23f", "pos": [0.86, 0.42, 0], "rot": [0, 0, 90], "seg": 12 },
+          { "shape": "cylinder", "size": [0.42, 0.42, 0.24], "color": "#ffd23f", "pos": [-0.86, 0.42, 0], "rot": [0, 0, 90], "seg": 12 },
+          { "shape": "cylinder", "size": [0.55, 0.55, 0.24], "color": "#ffd23f", "pos": [0.86, 0.55, -1.6], "rot": [0, 0, 90], "seg": 12 },
+          { "shape": "cylinder", "size": [0.55, 0.55, 0.24], "color": "#ffd23f", "pos": [-0.86, 0.55, -1.6], "rot": [0, 0, 90], "seg": 12 },
+          { "shape": "cone", "size": [0.7, 0.5], "color": "#ffd23f", "pos": [0, 0.5, 2.75], "rot": [90, 0, 0], "seg": 4 }
+        ] },
+        "cottage": { "size": 3.1, "height": 5.8, "points": 100, "kind": "building", "parts": [
+          { "shape": "box", "size": [4.2, 3.0, 4.2], "color": "#c98a5b", "pos": [0, 1.5, 0] },
+          { "shape": "box", "size": [4.3, 0.3, 4.3], "color": "#ffffff", "pos": [0, 3.0, 0] },
+          { "shape": "cone", "size": [3.3, 2.3], "color": "#e8364a", "pos": [0, 4.25, 0], "rot": [0, 45, 0], "seg": 4 },
+          { "shape": "cone", "size": [1.5, 1.05], "color": "#ffffff", "pos": [0, 4.9, 0], "rot": [0, 45, 0], "seg": 4 },
+          { "shape": "box", "size": [0.6, 1.6, 0.6], "color": "#8a5a3c", "pos": [1.1, 4.4, -0.8] },
+          { "shape": "box", "size": [0.75, 0.2, 0.75], "color": "#ffffff", "pos": [1.1, 5.25, -0.8] },
+          { "shape": "box", "size": [1.0, 1.7, 0.12], "color": "#2fb35e", "pos": [0, 0.85, 2.12] },
+          { "shape": "torus", "size": [0.3, 0.09], "color": "#1f8a5b", "pos": [0, 1.25, 2.22], "seg": 14 },
+          { "shape": "sphere", "size": [0.08], "color": "#e8364a", "pos": [0, 1.0, 2.25], "scale": [1.6, 0.9, 0.9] },
+          { "shape": "box", "size": [0.8, 0.8, 0.1], "color": "#ffe9a8", "pos": [1.3, 1.8, 2.12] },
+          { "shape": "box", "size": [0.8, 0.8, 0.1], "color": "#ffe9a8", "pos": [-1.3, 1.8, 2.12] },
+          { "shape": "box", "size": [0.1, 0.8, 0.8], "color": "#ffe9a8", "pos": [2.12, 1.8, 0] },
+          { "shape": "box", "size": [0.1, 0.8, 0.8], "color": "#ffe9a8", "pos": [-2.12, 1.8, 0] },
+          { "shape": "box", "size": [0.8, 0.8, 0.1], "color": "#ffe9a8", "pos": [0, 1.8, -2.12] },
+          { "shape": "sphere", "size": [0.09], "color": "#ff4f6d", "pos": [0, 2.92, 2.2] },
+          { "shape": "sphere", "size": [0.09], "color": "#ffd23f", "pos": [-1.6, 2.92, 2.2] },
+          { "shape": "sphere", "size": [0.09], "color": "#3ddc97", "pos": [-0.8, 2.92, 2.2] },
+          { "shape": "sphere", "size": [0.09], "color": "#4fb3ff", "pos": [0.8, 2.92, 2.2] },
+          { "shape": "sphere", "size": [0.09], "color": "#ffd23f", "pos": [1.6, 2.92, 2.2] }
+        ] },
+        "workshop": { "size": 3.8, "height": 11.5, "points": 220, "kind": "building", "parts": [
+          { "shape": "box", "size": [5.2, 6.5, 5.2], "color": "#b5524a", "pos": [0, 3.25, 0] },
+          { "shape": "box", "size": [5.45, 0.35, 5.45], "color": "#ffffff", "pos": [0, 0.15, 0] },
+          { "shape": "box", "size": [5.45, 0.35, 5.45], "color": "#ffffff", "pos": [0, 3.3, 0] },
+          { "shape": "box", "size": [5.5, 0.5, 5.5], "color": "#ffffff", "pos": [0, 6.6, 0] },
+          { "shape": "cone", "size": [4.2, 3.4], "color": "#2fb35e", "pos": [0, 8.55, 0], "rot": [0, 45, 0], "seg": 4 },
+          { "shape": "cone", "size": [1.9, 1.5], "color": "#ffffff", "pos": [0, 9.5, 0], "rot": [0, 45, 0], "seg": 4 },
+          { "shape": "cylinder", "size": [0.9, 0.9, 0.2], "color": "#fff6dc", "pos": [0, 5.0, 2.65], "rot": [90, 0, 0], "seg": 16 },
+          { "shape": "box", "size": [0.12, 0.6, 0.08], "color": "#2b2340", "pos": [0, 5.25, 2.78] },
+          { "shape": "box", "size": [0.45, 0.12, 0.08], "color": "#2b2340", "pos": [0.2, 5.0, 2.78] },
+          { "shape": "box", "size": [2.0, 2.6, 0.15], "color": "#2fb35e", "pos": [0, 1.3, 2.62] },
+          { "shape": "torus", "size": [0.45, 0.13], "color": "#1f8a5b", "pos": [0, 2.0, 2.75], "seg": 16 },
+          { "shape": "box", "size": [0.9, 1.0, 0.1], "color": "#ffe9a8", "pos": [1.7, 4.6, 2.62] },
+          { "shape": "box", "size": [0.9, 1.0, 0.1], "color": "#ffe9a8", "pos": [-1.7, 4.6, 2.62] },
+          { "shape": "box", "size": [0.1, 1.0, 0.9], "color": "#ffe9a8", "pos": [2.62, 1.8, 1.2] },
+          { "shape": "box", "size": [0.1, 1.0, 0.9], "color": "#ffe9a8", "pos": [2.62, 1.8, -1.2] },
+          { "shape": "box", "size": [0.1, 1.0, 0.9], "color": "#ffe9a8", "pos": [-2.62, 1.8, 1.2] },
+          { "shape": "box", "size": [0.1, 1.0, 0.9], "color": "#ffe9a8", "pos": [-2.62, 1.8, -1.2] },
+          { "shape": "box", "size": [0.1, 1.0, 0.9], "color": "#ffe9a8", "pos": [2.62, 4.6, 0] },
+          { "shape": "box", "size": [0.1, 1.0, 0.9], "color": "#ffe9a8", "pos": [-2.62, 4.6, 0] },
+          { "shape": "cylinder", "size": [0.45, 0.45, 0.6], "color": "#e8364a", "pos": [1.6, 8.6, -1.4], "seg": 10 },
+          { "shape": "cylinder", "size": [0.45, 0.45, 0.6], "color": "#ffffff", "pos": [1.6, 9.2, -1.4], "seg": 10 },
+          { "shape": "cylinder", "size": [0.45, 0.45, 0.6], "color": "#e8364a", "pos": [1.6, 9.8, -1.4], "seg": 10 },
+          { "shape": "cylinder", "size": [0.55, 0.55, 0.2], "color": "#ffffff", "pos": [1.6, 10.2, -1.4], "seg": 10 },
+          { "shape": "ico", "size": [0.5], "color": "#ffd23f", "pos": [0, 10.75, 0], "scale": [1, 1.2, 0.6] }
+        ] },
+        "tree_giant": { "size": 4.9, "height": 18, "points": 420, "kind": "building", "parts": [
+          { "shape": "cylinder", "size": [3.2, 3.4, 0.8], "color": "#e8364a", "pos": [0, 0.4, 0], "seg": 16 },
+          { "shape": "cylinder", "size": [3.3, 3.3, 0.18], "color": "#ffd23f", "pos": [0, 0.82, 0], "seg": 16 },
+          { "shape": "cylinder", "size": [0.8, 1.0, 2.0], "color": "#8a5a3c", "pos": [0, 1.8, 0], "seg": 10 },
+          { "shape": "cone", "size": [4.6, 4.2], "color": "#1f8a5b", "pos": [0, 4.6, 0], "seg": 14 },
+          { "shape": "cone", "size": [3.8, 3.8], "color": "#25a06a", "pos": [0, 7.0, 0], "seg": 14 },
+          { "shape": "cone", "size": [3.0, 3.4], "color": "#2fb878", "pos": [0, 9.2, 0], "seg": 14 },
+          { "shape": "cone", "size": [2.2, 3.0], "color": "#36c483", "pos": [0, 11.2, 0], "seg": 12 },
+          { "shape": "cone", "size": [1.3, 2.6], "color": "#3fd08c", "pos": [0, 13.0, 0], "seg": 12 },
+          { "shape": "sphere", "size": [0.38], "color": "#e8364a", "pos": [0, 2.9, 0], "ring": { "n": 14, "r": 3.9 } },
+          { "shape": "sphere", "size": [0.34], "color": "#ffd23f", "pos": [0, 5.5, 0], "ring": { "n": 12, "r": 3.1, "start": 15 } },
+          { "shape": "sphere", "size": [0.32], "color": "#4fb3ff", "pos": [0, 7.9, 0], "ring": { "n": 10, "r": 2.4, "start": 8 } },
+          { "shape": "sphere", "size": [0.3], "color": "#ff7fbf", "pos": [0, 10.0, 0], "ring": { "n": 8, "r": 1.75, "start": 20 } },
+          { "shape": "sphere", "size": [0.26], "color": "#ffffff", "pos": [0, 11.9, 0], "ring": { "n": 6, "r": 1.1, "start": 5 } },
+          { "shape": "ico", "size": [1.1], "color": "#ffd23f", "pos": [0, 15.3, 0], "scale": [1, 1.25, 0.55] },
+          { "shape": "ico", "size": [0.5], "color": "#fff3a6", "pos": [0, 15.3, 0.4], "scale": [1, 1.2, 0.6] },
+          { "shape": "box", "size": [1.3, 1.0, 1.3], "color": "#4fb3ff", "pos": [2.6, 1.3, 2.4], "rot": [0, 20, 0] },
+          { "shape": "box", "size": [1.1, 0.9, 1.1], "color": "#ff7fbf", "pos": [-2.8, 1.25, 2.0], "rot": [0, -25, 0] },
+          { "shape": "box", "size": [1.2, 0.8, 1.2], "color": "#2fb35e", "pos": [0.4, 1.2, 3.2], "rot": [0, 10, 0] }
+        ] }
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "xmas-2026",
+      "name": { "zh": "聖誕節", "en": "Christmas" },
+      "from": "2026-12-01",
+      "to": "2026-12-26",
+      "theme": "xmas",
+      "music": "ice",
+      "banner": {
+        "icon": "🎄",
+        "zh": ["聖誕小鎮開咗喇！", "聖誕小鎮開放了！"],
+        "en": "Christmas Town is open!",
+        "bg": "#c8102e", "bg2": "#0b7a43", "fg": "#ffffff",
+        "snow": true
+      },
+      "quests": [
+        { "id": "ev_xmas_rounds", "event": "levelDone", "goal": 3, "reward": 120, "icon": "🎄", "zh": "喺聖誕小鎮玩 3 局", "en": "Play 3 rounds" },
+        { "id": "ev_xmas_correct", "event": "correct", "goal": 25, "reward": 150, "icon": "🎁", "zh": ["答啱 25 個字", "答對 25 個字"], "en": "Get 25 right" },
+        { "id": "ev_xmas_write", "event": "write", "goal": 8, "reward": 120, "icon": "⛄", "zh": "寫 8 次字", "en": "Write 8 times" }
+      ],
+      "items": { "hats": ["ev_santa_hat"], "pets": ["ev_reindeer"] },
+      "list": "xmas-words"
+    }
+  ],
+  "cosmetics": {
+    "hats": [
+      { "id": "ev_santa_hat", "name": { "zh": "聖誕帽", "en": "Santa hat" }, "icon": "🎅", "price": 600, "rarity": "rare", "parts": [
+        { "shape": "cylinder", "size": [0.47, 0.49, 0.16], "color": "#ffffff", "pos": [0, 0.06, 0], "seg": 18 },
+        { "shape": "cone", "size": [0.43, 0.78], "color": "#e8364a", "pos": [0, 0.5, -0.05], "rot": [-16, 0, 0], "seg": 16 },
+        { "shape": "sphere", "size": [0.11], "color": "#ffffff", "pos": [0, 0.87, -0.17] }
+      ] }
+    ],
+    "pets": [
+      { "id": "ev_reindeer", "base": "dog", "name": { "zh": "馴鹿", "en": "Reindeer" }, "icon": "🦌", "rarity": "rare",
+        "recolor": { "#c98a4b": "#9a6233", "#7a4a2a": "#5e3a20", "#f3e2c4": "#f2dcc0", "#e8364a": "#2fb35e" },
+        "parts": [
+          { "shape": "sphere", "size": [0.07], "color": "#ff2e3d", "pos": [0, 0.7, 0.66] },
+          { "shape": "cylinder", "size": [0.025, 0.03, 0.3], "color": "#d9b07a", "pos": [0.14, 1.06, 0.22], "rot": [0, 0, -25], "seg": 6 },
+          { "shape": "cylinder", "size": [0.025, 0.03, 0.3], "color": "#d9b07a", "pos": [-0.14, 1.06, 0.22], "rot": [0, 0, 25], "seg": 6 },
+          { "shape": "cylinder", "size": [0.02, 0.025, 0.16], "color": "#d9b07a", "pos": [0.24, 1.14, 0.25], "rot": [0, 0, -70], "seg": 6 },
+          { "shape": "cylinder", "size": [0.02, 0.025, 0.16], "color": "#d9b07a", "pos": [-0.24, 1.14, 0.25], "rot": [0, 0, 70], "seg": 6 }
+        ] }
+    ]
+  },
+  "lists": [
+    {
+      "id": "xmas-words",
+      "name": { "zh": "聖誕字", "en": "Christmas words" },
+      "items": [
+        { "text": "聖", "jyutping": "sing3", "pinyin": "shèng", "en": "holy", "word": "聖誕", "emoji": "🎄", "distractors": ["望", "星"] },
+        { "text": "誕", "jyutping": "daan3", "pinyin": "dàn", "en": "birth", "word": "聖誕", "emoji": "🎅", "distractors": ["延", "蛋"] },
+        { "text": "禮", "jyutping": "lai5", "pinyin": "lǐ", "en": "gift", "word": "禮物", "emoji": "🎁", "distractors": ["體", "豐"] },
+        { "text": "物", "jyutping": "mat6", "pinyin": "wù", "en": "thing", "word": "禮物", "emoji": "📦", "distractors": ["牛", "勿"] },
+        { "text": "雪", "jyutping": "syut3", "pinyin": "xuě", "en": "snow", "word": "雪人", "emoji": "⛄", "distractors": ["雨", "雲"] },
+        { "text": "鈴", "jyutping": "ling4", "pinyin": "líng", "en": "bell", "word": "鈴聲", "emoji": "🔔", "distractors": ["鉛", "令"] },
+        { "text": "樹", "jyutping": "syu6", "pinyin": "shù", "en": "tree", "word": "聖誕樹", "emoji": "🌲", "distractors": ["村", "對"] },
+        { "text": "星", "jyutping": "sing1", "pinyin": "xīng", "en": "star", "word": "星星", "emoji": "⭐", "distractors": ["是", "生"] },
+        { "text": "襪", "jyutping": "mat6", "pinyin": "wà", "en": "sock", "word": "襪子", "emoji": "🧦", "distractors": ["被", "抹"] },
+        { "text": "燈", "jyutping": "dang1", "pinyin": "dēng", "en": "light", "word": "燈光", "emoji": "💡", "distractors": ["登", "火"] },
+        { "text": "鹿", "jyutping": "luk6", "pinyin": "lù", "en": "deer", "word": "馴鹿", "emoji": "🦌", "distractors": ["麻", "塵"] },
+        { "text": "冬", "jyutping": "dung1", "pinyin": "dōng", "en": "winter", "word": "冬天", "emoji": "❄️", "distractors": ["各", "東"] }
+      ]
+    }
+  ]
+}
